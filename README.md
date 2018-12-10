@@ -12,7 +12,7 @@ This version of OmniMapper has been tested on Ubuntu 16.04 with ROS Kinetic.
 
 ## Dependencies
 
-Currently OmniMapper primarily depends on GTSAM 4.0 and PCL. These libraries also have a variety of dependencies (many of which you may already have installed).
+OmniMapper depends primarily on GTSAM 4.0 and PCL. These libraries also have a variety of dependencies (many of which you may already have installed).
 
 Install Cmake, Boost, Git (used by all libraries):
 ```
@@ -40,7 +40,7 @@ sudo apt-get install libgoogle-perftools-dev
 Clone the GTSAM repository from BitBucket and checkout the most recently tested commit:
 
 ```
-git clone https://antowilby@bitbucket.org/gtborg/gtsam.git
+git clone https://bitbucket.org/gtborg/gtsam.git
 cd gtsam
 git checkout 6f8bfe0
 ```
