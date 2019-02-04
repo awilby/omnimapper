@@ -128,9 +128,11 @@ If this is successful, CSM has now been compiled and installed to `csm/deploy`.
 
 #### Install OmniMapper ROS Package
 
-Now, edit the CMakeLists.txt for omnimapper_ros. Find the line where CSM_DIR is set and change the path to where your CSM is installed, e.g. `/path/to/csm/deploy/lib/csm`. This tells catkin where to find the cmake config file for CSM.
+Copy the `csm` directory from `omnimapper_ros/csm_config` into `csm/deploy/lib/`. 
 
 Also, copy the `libcsm.so` file from `csm/deploy/lib`,  to `/usr/local/lib`.
+
+Now, edit the CMakeLists.txt for omnimapper_ros. Find the line where CSM_DIR is set and change the path to where your CSM is installed, e.g. `/path/to/csm/deploy/lib/csm`. This tells catkin where to find the cmake config file for CSM.
 
 These steps should allow omnimapper_ros to compile with no issues. (Yes, this is annoying and hacky, and hopefully will be updated to a better installation process sometime in the future.)
 
